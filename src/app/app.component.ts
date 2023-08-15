@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'test';
-}
+  title = 'welcome to website';
+  typedValue:string  = '';
+ 
+
+  isValid:string ="validate";
+  val: string = ''; 
+
+  }
+

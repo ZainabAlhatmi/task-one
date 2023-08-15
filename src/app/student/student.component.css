@@ -1,0 +1,75 @@
+.body {
+  display: inline-block;
+  margin: 0px auto;
+  text-align: center;
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+  .text-red {
+    color: red;
+  }
+  
+  .text-green {
+    color: green;
+  }
+  
+  .badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .pass {
+    background-color: green;
+    color: white;
+  }
+  
+  .fail {
+    background-color: red;
+    color: white;
+  }
+ .center {
+    margin: auto;
+    width: 20%;
+
+    padding: 30px;
+      }
+      .centerr {
+        margin: auto;
+        width: 20%;
+        border: 5px solid #292a28;
+        padding: 10px;
+      }
+      .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align:center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        align-items:center;
+      }

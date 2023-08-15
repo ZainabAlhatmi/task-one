@@ -1,0 +1,61 @@
+<div class="content">
+<div >
+
+    <div class="text-center m-auto">
+        <h1 class="center">
+            This is student page
+        </h1>
+    
+        <div class="row">
+            <div class="col-sm-10 col-md-6 mx-auto">
+
+                <div class="centerr">
+                    <div >
+                        <h5>Student List</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="" *ngFor="let item of StudentList">
+                            <span>student Name : {{item.name}} <span> ({{item.Email}})<span>({{item.Mark}})</span> </span></span> <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+<br>
+<br>
+<br>
+        <!-- Start Table -->
+        <div class="row">
+            <div class="col-sm-10 col-md-6 mx-auto mt-4">
+
+                <div class="table">
+                    <table id="customers" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="bg-primary text-white">name</th>
+                                <th class="bg-primary text-white">Email</th>
+                                <th class="bg-primary text-white">Mark</th>
+                               
+                                <th>PASS/FAIL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr *ngFor="let item of   StudentList" >
+                                <td>{{item.name}}</td>
+                                <td>{{item.Email}}</td>
+                                <td [ngClass]="{ 'text-red': item.Mark < 50, 'text-green': item.Mark >= 50 }">{{item.Mark}}</td>
+                                <td *ngIf="item.Mark >= 50"><span class="badge pass">PASS</span></td> 
+                                <td *ngIf="item.Mark < 50" ><span class="badge fail">FAIL</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- End Table -->
+        <button class="button" routerLink="">Go back to Login</button>
+    </div>
+</div>
+</div>
